@@ -24,6 +24,7 @@
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.4",
+    "faker": "^5.5.3",
     "i18next": "^20.2.1",
     "react": "17.0.1",
     "react-fast-compare": "^3.2.0",
