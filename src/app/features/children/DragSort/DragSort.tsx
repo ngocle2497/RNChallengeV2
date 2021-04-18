@@ -1,12 +1,13 @@
+import {StackView} from '@components';
 import React, {memo} from 'react';
 import isEqual from 'react-fast-compare';
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
 
 const DragSortComponent = () => {
   return (
-    <View>
-      <Text />
-    </View>
+    <StackView>
+      <Text>1</Text>
+    </StackView>
   );
 };
 
