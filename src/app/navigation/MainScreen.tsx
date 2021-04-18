@@ -44,6 +44,7 @@ const MainScreenComponent = () => {
           )
         );
       },
+      cardOverlayEnabled: true,
       gestureEnabled: true,
       ...TransitionPresets.SlideFromRightIOS,
       headerStyleInterpolator: HeaderStyleInterpolators.forUIKit,
@@ -62,7 +63,7 @@ const MainScreenComponent = () => {
       <MainStack.Screen
         component={DragSort}
         name={APP_SCREEN.DRAG_SORT}
-        options={{title: t('dragSort:txHeader')}}
+        options={{headerShown: false}}
       />
     </MainStack.Navigator>
   );
