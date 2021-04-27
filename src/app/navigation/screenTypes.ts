@@ -3,8 +3,8 @@ export enum APP_SCREEN {
   HOME = 'HOME',
   DRAG_SORT = 'DRAG_SORT',
 }
-
-export type RootStackParamList = {
-  [APP_SCREEN.HOME]: undefined;
-  [APP_SCREEN.DRAG_SORT]: undefined;
+export type HomeParamList = {
+  [APP_SCREEN.DRAG_SORT]: {id: number};
 };
+
+export type RootStackParamList = Partial<HomeParamList>;

@@ -7,9 +7,7 @@ import {
   StackNavigationOptions,
   TransitionPresets,
 } from '@react-navigation/stack';
-import React, {memo, useMemo} from 'react';
-import isEqual from 'react-fast-compare';
-import {useTranslation} from 'react-i18next';
+import React, {useMemo} from 'react';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 import {Block} from '../library/components/Block/Block';
@@ -20,9 +18,8 @@ import {APP_SCREEN} from './screenTypes';
 
 const MainStack = createStackNavigator();
 
-const MainScreenComponent = () => {
+export const MainScreen = () => {
   // state
-  const [t] = useTranslation();
   const screenOptions = useMemo<StackNavigationOptions>(
     () => ({
       headerStyle: {
@@ -68,4 +65,3 @@ const MainScreenComponent = () => {
     </MainStack.Navigator>
   );
 };
-export const MainScreen = memo(MainScreenComponent, isEqual);
