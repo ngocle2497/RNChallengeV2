@@ -9,6 +9,7 @@ const HomeComponent = () => {
   return (
     <StackView>
       <RowButton screenName={APP_SCREEN.DRAG_SORT} txTitle={'main:dragSort'} />
+      <RowButton screenName={APP_SCREEN.BUTTON_3D} txTitle={'main:3dButton'} />
     </StackView>
   );
 };

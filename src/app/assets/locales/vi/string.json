@@ -1,8 +1,12 @@
 {
   "main": {
-    "dragSort": "Drag and Sort"
+    "dragSort": "Drag and Sort",
+    "3dButton": "3D Button"
   },
   "dragSort": {
     "txHeader": "Drag and Sort"
+  },
+  "3dButton": {
+    "txHeader": "3D Button"
   }
 }

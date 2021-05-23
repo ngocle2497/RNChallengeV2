@@ -1,4 +1,5 @@
 import {APP_COLOR} from '@config';
+import {Button3D} from '@features/children/Button3D';
 import {DragSort} from '@features/children/DragSort/DragSort';
 import {Home} from '@features/home/Home';
 import {
@@ -8,6 +9,7 @@ import {
   TransitionPresets,
 } from '@react-navigation/stack';
 import React, {useMemo} from 'react';
+import {useTranslation} from 'react-i18next';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 import {Block} from '../library/components/Block/Block';
@@ -20,6 +22,7 @@ const MainStack = createStackNavigator();
 
 export const MainScreen = () => {
   // state
+  const [t] = useTranslation();
   const screenOptions = useMemo<StackNavigationOptions>(
     () => ({
       headerStyle: {
@@ -61,6 +64,11 @@ export const MainScreen = () => {
         component={DragSort}
         name={APP_SCREEN.DRAG_SORT}
         options={{headerShown: false}}
+      />
+      <MainStack.Screen
+        component={Button3D}
+        name={APP_SCREEN.BUTTON_3D}
+        options={{title: t('3dButton:txHeader')}}
       />
     </MainStack.Navigator>
   );
