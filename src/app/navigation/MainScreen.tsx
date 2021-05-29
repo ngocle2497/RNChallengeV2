@@ -1,5 +1,6 @@
 import {APP_COLOR} from '@config';
 import {Button3D} from '@features/children/Button3D';
+import {Counter} from '@features/children/Counter';
 import {DragSort} from '@features/children/DragSort/DragSort';
 import {Home} from '@features/home/Home';
 import {
@@ -69,6 +70,11 @@ export const MainScreen = () => {
         component={Button3D}
         name={APP_SCREEN.BUTTON_3D}
         options={{title: t('3dButton:txHeader')}}
+      />
+      <MainStack.Screen
+        component={Counter}
+        name={APP_SCREEN.COUNTER}
+        options={{title: t('counter:txHeader')}}
       />
     </MainStack.Navigator>
   );

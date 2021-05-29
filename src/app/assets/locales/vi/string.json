@@ -1,12 +1,16 @@
 {
   "main": {
     "dragSort": "Drag and Sort",
-    "3dButton": "3D Button"
+    "3dButton": "3D Button",
+    "counter": "Counter"
   },
   "dragSort": {
     "txHeader": "Drag and Sort"
   },
   "3dButton": {
     "txHeader": "3D Button"
+  },
+  "counter": {
+    "txHeader": "Counter"
   }
 }
