@@ -2,7 +2,8 @@
   "main": {
     "dragSort": "Drag and Sort",
     "3dButton": "3D Button",
-    "counter": "Counter"
+    "counter": "Counter",
+    "flipCard": "Flip Card"
   },
   "dragSort": {
     "txHeader": "Drag and Sort"
@@ -12,5 +13,8 @@
   },
   "counter": {
     "txHeader": "Counter"
+  },
+  "flipCard": {
+    "txHeader": "Flip Card"
   }
 }

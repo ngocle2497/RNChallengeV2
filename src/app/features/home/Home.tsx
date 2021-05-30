@@ -11,6 +11,7 @@ const HomeComponent = () => {
       <RowButton screenName={APP_SCREEN.DRAG_SORT} txTitle={'main:dragSort'} />
       <RowButton screenName={APP_SCREEN.BUTTON_3D} txTitle={'main:3dButton'} />
       <RowButton screenName={APP_SCREEN.COUNTER} txTitle={'main:counter'} />
+      <RowButton screenName={APP_SCREEN.FLIP_CARD} txTitle={'main:flipCard'} />
     </StackView>
   );
 };
