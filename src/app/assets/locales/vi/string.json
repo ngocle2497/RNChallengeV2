@@ -3,7 +3,8 @@
     "dragSort": "Drag and Sort",
     "3dButton": "3D Button",
     "counter": "Counter",
-    "flipCard": "Flip Card"
+    "flipCard": "Flip Card",
+    "phoneIncoming": "Phone Incoming"
   },
   "dragSort": {
     "txHeader": "Drag and Sort"
@@ -16,5 +17,8 @@
   },
   "flipCard": {
     "txHeader": "Flip Card"
+  },
+  "phoneIncoming": {
+    "txHeader": "Phone Incoming"
   }
 }

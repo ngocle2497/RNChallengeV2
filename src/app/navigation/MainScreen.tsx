@@ -3,6 +3,7 @@ import {Button3D} from '@features/children/Button3D';
 import {Counter} from '@features/children/Counter';
 import {DragSort} from '@features/children/DragSort/DragSort';
 import {FlipCard} from '@features/children/FlipCard';
+import {PhoneIncoming} from '@features/children/PhoneIncoming';
 import {Home} from '@features/home/Home';
 import {
   createStackNavigator,
@@ -81,6 +82,11 @@ export const MainScreen = () => {
         component={FlipCard}
         name={APP_SCREEN.FLIP_CARD}
         options={{title: t('flipCard:txHeader')}}
+      />
+      <MainStack.Screen
+        component={PhoneIncoming}
+        name={APP_SCREEN.PHONE_INCOMING}
+        options={{title: t('phoneIncoming:txHeader')}}
       />
     </MainStack.Navigator>
   );
