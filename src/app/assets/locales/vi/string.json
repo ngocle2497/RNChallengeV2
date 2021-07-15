@@ -4,7 +4,8 @@
     "3dButton": "3D Button",
     "counter": "Counter",
     "flipCard": "Flip Card",
-    "phoneIncoming": "Phone Incoming"
+    "phoneIncoming": "Phone Incoming",
+    "jogWheel": "Jog Wheel"
   },
   "dragSort": {
     "txHeader": "Drag and Sort"
@@ -20,5 +21,8 @@
   },
   "phoneIncoming": {
     "txHeader": "Phone Incoming"
+  },
+  "jogWheel": {
+    "txHeader": "Jog Wheel"
   }
 }

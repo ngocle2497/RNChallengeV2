@@ -6,6 +6,7 @@ export enum APP_SCREEN {
   COUNTER = 'COUNTER',
   FLIP_CARD = 'FLIP_CARD',
   PHONE_INCOMING = 'PHONE_INCOMING',
+  JOG_WHEEL = 'JOG_WHEEL',
 }
 export type HomeParamList = {
   [APP_SCREEN.DRAG_SORT]: undefined;
@@ -13,6 +14,7 @@ export type HomeParamList = {
   [APP_SCREEN.COUNTER]: undefined;
   [APP_SCREEN.FLIP_CARD]: undefined;
   [APP_SCREEN.PHONE_INCOMING]: undefined;
+  [APP_SCREEN.JOG_WHEEL]: undefined;
 };
 
 export type RootStackParamList = Partial<HomeParamList>;

@@ -16,6 +16,7 @@ const HomeComponent = () => {
         screenName={APP_SCREEN.PHONE_INCOMING}
         txTitle={'main:phoneIncoming'}
       />
+      <RowButton screenName={APP_SCREEN.JOG_WHEEL} txTitle={'main:jogWheel'} />
     </StackView>
   );
 };

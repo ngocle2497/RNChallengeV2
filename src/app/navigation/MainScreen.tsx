@@ -3,6 +3,7 @@ import {Button3D} from '@features/children/Button3D';
 import {Counter} from '@features/children/Counter';
 import {DragSort} from '@features/children/DragSort/DragSort';
 import {FlipCard} from '@features/children/FlipCard';
+import {JogWheel} from '@features/children/JogWheel';
 import {PhoneIncoming} from '@features/children/PhoneIncoming';
 import {Home} from '@features/home/Home';
 import {
@@ -87,6 +88,11 @@ export const MainScreen = () => {
         component={PhoneIncoming}
         name={APP_SCREEN.PHONE_INCOMING}
         options={{title: t('phoneIncoming:txHeader')}}
+      />
+      <MainStack.Screen
+        component={JogWheel}
+        name={APP_SCREEN.JOG_WHEEL}
+        options={{title: t('jogWheel:txHeader')}}
       />
     </MainStack.Navigator>
   );
