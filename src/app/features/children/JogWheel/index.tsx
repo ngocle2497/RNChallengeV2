@@ -43,14 +43,12 @@ const styles = StyleSheet.create({
 const JogWheelComponent = () => {
   // state
   const progress = useSharedValue(0);
-  const rotate = useRadian(
-    useInterpolate(progress, [0, 80], [0, 720], Extrapolate.CLAMP),
-  );
+  const rotate = useRadian(useInterpolate(progress, [0, 80], [0, 720]));
   const shadowRadius = useInterpolate(progress, [0, 10], [0, 15]);
   const elevation = useInterpolate(progress, [0, 10], [1, 15]);
   const scale = useSharedValue(1);
   const stroke = useDerivedValue(() =>
-    interpolateColor(progress.value, [0, 20], ['#000', '#00cec9']),
+    interpolateColor(progress.value, [0, 10], ['#000', '#00cec9']),
   );
 
   // function
